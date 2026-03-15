@@ -120,7 +120,7 @@ class NoteAdapter(
             else selected.add(note.id)
 
             if (selected.isEmpty()) isSelectionMode = false
-            notifyItemChanged(bindingAdapterPosition)
+            notifyItemChanged(adapterPosition)
             listener.onSelectionModeChange(isSelectionMode, selected.size)
         }
     }
