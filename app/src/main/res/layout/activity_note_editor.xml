@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable editor content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="160dp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                app:hintEnabled="true"
+                android:hint="Title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceTitleLarge"
+                    android:inputType="textCapSentences"
+                    android:maxLines="2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Edit content -->
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="Start writing…"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="300dp"
+                android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            <!-- Markdown Preview (hidden by default) -->
+            <TextView
+                android:id="@+id/tvPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:minHeight="300dp"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Format Toolbar -->
+    <LinearLayout
+        android:id="@+id/formatToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/colorSurfaceVariant"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp">
+
+        <!-- Format buttons -->
+        <ImageButton android:id="@+id/btnBold"      style="@style/FormatBtn" android:src="@drawable/ic_bold"      android:contentDescription="Bold" />
+        <ImageButton android:id="@+id/btnItalic"    style="@style/FormatBtn" android:src="@drawable/ic_italic"    android:contentDescription="Italic" />
+        <ImageButton android:id="@+id/btnStrike"    style="@style/FormatBtn" android:src="@drawable/ic_strike"    android:contentDescription="Strikethrough" />
+        <ImageButton android:id="@+id/btnCode"      style="@style/FormatBtn" android:src="@drawable/ic_code"      android:contentDescription="Inline code" />
+        <ImageButton android:id="@+id/btnCodeBlock" style="@style/FormatBtn" android:src="@drawable/ic_code_block" android:contentDescription="Code block" />
+        <ImageButton android:id="@+id/btnH1"        style="@style/FormatBtn" android:src="@drawable/ic_h1"        android:contentDescription="H1" />
+        <ImageButton android:id="@+id/btnH2"        style="@style/FormatBtn" android:src="@drawable/ic_h2"        android:contentDescription="H2" />
+        <ImageButton android:id="@+id/btnQuote"     style="@style/FormatBtn" android:src="@drawable/ic_quote"     android:contentDescription="Blockquote" />
+        <ImageButton android:id="@+id/btnCheckbox"  style="@style/FormatBtn" android:src="@drawable/ic_checkbox"  android:contentDescription="Checklist" />
+
+        <!-- Spacer -->
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+
+        <!-- Voice button -->
+        <ImageButton
+            android:id="@+id/btnVoice"
+            style="@style/FormatBtn"
+            android:src="@drawable/ic_mic"
+            android:contentDescription="Voice input" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

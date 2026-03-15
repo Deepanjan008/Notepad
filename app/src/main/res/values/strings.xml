@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Elite Memo Pro</string>
+    <string name="untitled">Untitled</string>
+    <string name="search_hint">Search notes…</string>
+    <string name="selected">Selected</string>
+    <string name="delete_notes">Delete Notes?</string>
+    <string name="delete_notes_msg">Delete %1$d note(s)? This cannot be undone.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="biometric_subtitle">Unlock to access your notes</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="unlock_note">Unlock Note</string>
+    <string name="lock_note">Lock Note</string>
+    <string name="lock_note_msg">This note will be protected by biometric authentication.</string>
+    <string name="lock">Lock</string>
+    <string name="note_locked">Note locked 🔒</string>
+    <string name="note_unlocked">Note unlocked 🔓</string>
+    <string name="note_locked_label">Locked</string>
+    <string name="listening">Listening…</string>
+    <string name="export_encrypted">Export (Encrypted)</string>
+    <string name="import_encrypted">Import (Encrypted)</string>
+    <string name="password_hint">Enter password (min 4 chars)</string>
+    <string name="export_msg">All notes will be encrypted with AES-256-GCM and saved as a .emb file.</string>
+    <string name="import_msg">Enter the password you used during export.</string>
+    <string name="proceed">Proceed</string>
+    <string name="export_success">Backup exported successfully!</string>
+    <string name="export_fail">Export failed</string>
+    <string name="import_pick">Pick your .emb backup file</string>
+    <string name="import_success">%1$d notes imported!</string>
+    <string name="import_fail">Import failed. Wrong password?</string>
+    <string name="pwd_too_short">Password must be at least 4 characters</string>
+    <string name="widget_empty">Tap + to add your first note</string>
+    <string name="new_note">New Note</string>
+    <string name="new_note_shortcut_long">Create a new note instantly</string>
+    <string name="empty_notes">No notes yet.\nTap + to get started!</string>
+
+    <!-- Settings -->
+    <string name="pref_cat_appearance">Appearance</string>
+    <string name="pref_cat_editor">Editor</string>
+    <string name="pref_cat_security">Security</string>
+    <string name="pref_cat_backup">Backup &amp; Restore</string>
+    <string name="pref_cat_about">About</string>
+    <string name="pref_theme_title">App Theme</string>
+    <string name="pref_theme_summary">Follow system, Light or Dark</string>
+    <string name="pref_layout_title">Note Card Layout</string>
+    <string name="pref_layout_summary">Grid or List view</string>
+    <string name="pref_font_size_title">Preview Font Size</string>
+    <string name="pref_lock_title">App Lock</string>
+    <string name="pref_lock_summary">Require biometric to open app</string>
+    <string name="pref_autosave_title">Auto-Save</string>
+    <string name="pref_autosave_summary">Automatically save while typing</string>
+    <string name="pref_default_preview_title">Default Markdown Preview</string>
+    <string name="pref_default_preview_summary">Open notes in preview mode by default</string>
+    <string name="pref_export_title">Export Encrypted Backup</string>
+    <string name="pref_export_summary">AES-256-GCM encrypted .emb file</string>
+    <string name="pref_import_title">Import Backup</string>
+    <string name="pref_import_summary">Restore from .emb encrypted backup</string>
+    <string name="pref_github_title">View on GitHub</string>
+    <string name="pref_version_title">Version</string>
+    <string name="pref_version_summary">Elite Memo Pro</string>
+</resources>

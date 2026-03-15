@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="new_note"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_24"
+        android:shortcutShortLabel="@string/new_note"
+        android:shortcutLongLabel="@string/new_note_shortcut_long">
+
+        <intent
+            android:action="com.deepanjanxyz.notepad.NEW_NOTE"
+            android:targetPackage="com.deepanjanxyz.notepad"
+            android:targetClass="com.deepanjanxyz.notepad.ui.editor.NoteEditorActivity" />
+
+        <categories android:name="android.shortcut.conversation" />
+
+    </shortcut>
+
+</shortcuts>

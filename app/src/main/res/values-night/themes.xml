@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.EliteMemoPro" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#D0BCFF</item>
+        <item name="colorOnPrimary">#381E72</item>
+        <item name="colorPrimaryContainer">#4F378B</item>
+        <item name="colorSecondary">#CCC2DC</item>
+        <item name="colorSurface">#1C1B1F</item>
+        <item name="colorSurfaceVariant">#49454F</item>
+        <item name="colorError">#F2B8B5</item>
+        <item name="android:windowBackground">#1C1B1F</item>
+    </style>
+</resources>

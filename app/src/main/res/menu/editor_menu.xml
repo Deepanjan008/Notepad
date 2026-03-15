@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_save_24"
+        android:title="Save"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_preview"
+        android:icon="@drawable/ic_preview"
+        android:title="Preview"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_lock_note"
+        android:icon="@drawable/ic_lock_open"
+        android:title="Lock note"
+        app:showAsAction="ifRoom" />
+
+</menu>

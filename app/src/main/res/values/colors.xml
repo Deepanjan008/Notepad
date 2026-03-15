@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- M3 Brand Colors -->
+    <color name="md_primary">#6750A4</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#EADDFF</color>
+    <color name="md_secondary">#625B71</color>
+    <color name="md_surface">#FFFBFE</color>
+    <color name="md_surface_variant">#E7E0EC</color>
+    <color name="md_background">#FFFBFE</color>
+    <color name="md_on_background">#1C1B1F</color>
+    <color name="md_error">#B3261E</color>
+
+    <!-- Note card palette (light mode) – warm M3 tonal surfaces -->
+    <color name="note_color_0">#F8EFF8</color>
+    <color name="note_color_1">#EEF1FF</color>
+    <color name="note_color_2">#FFF8E1</color>
+    <color name="note_color_3">#E8F5E9</color>
+    <color name="note_color_4">#FCE4EC</color>
+    <color name="note_color_5">#E3F2FD</color>
+    <color name="note_color_6">#FBE9E7</color>
+    <color name="note_color_7">#F3E5F5</color>
+    <color name="note_color_8">#E0F7FA</color>
+    <color name="note_color_9">#FFFDE7</color>
+</resources>

@@ -1,0 +1,33 @@
+[versions]
+agp = "8.9.0"
+kotlin = "2.1.20"
+compileSdk = "35"
+minSdk = "24"
+targetSdk = "35"
+coreKtx = "1.15.0"
+appcompat = "1.7.0"
+material = "1.12.0"
+constraintlayout = "2.2.1"
+preference = "1.2.1"
+biometric = "1.2.0-alpha05"
+markwon = "4.6.2"
+activityKtx = "1.10.1"
+coroutines = "1.10.1"
+
+[libraries]
+androidx-core-ktx          = { module = "androidx.core:core-ktx",                           version.ref = "coreKtx" }
+androidx-appcompat         = { module = "androidx.appcompat:appcompat",                      version.ref = "appcompat" }
+material                   = { module = "com.google.android.material:material",              version.ref = "material" }
+constraintlayout           = { module = "androidx.constraintlayout:constraintlayout",        version.ref = "constraintlayout" }
+preference-ktx             = { module = "androidx.preference:preference-ktx",               version.ref = "preference" }
+biometric                  = { module = "androidx.biometric:biometric",                      version.ref = "biometric" }
+markwon-core               = { module = "io.noties.markwon:core",                            version.ref = "markwon" }
+markwon-strikethrough      = { module = "io.noties.markwon:ext-strikethrough",               version.ref = "markwon" }
+markwon-tables             = { module = "io.noties.markwon:ext-tables",                      version.ref = "markwon" }
+markwon-tasklist           = { module = "io.noties.markwon:ext-tasklist",                    version.ref = "markwon" }
+activity-ktx               = { module = "androidx.activity:activity-ktx",                   version.ref = "activityKtx" }
+coroutines-android         = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android",  version.ref = "coroutines" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android      = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

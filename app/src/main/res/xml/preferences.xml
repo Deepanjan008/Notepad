@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ── Appearance ─────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_cat_appearance">
+
+        <ListPreference
+            app:key="pref_theme"
+            app:title="@string/pref_theme_title"
+            app:summary="@string/pref_theme_summary"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:defaultValue="system"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="pref_layout"
+            app:title="@string/pref_layout_title"
+            app:summary="@string/pref_layout_summary"
+            app:entries="@array/layout_entries"
+            app:entryValues="@array/layout_values"
+            app:defaultValue="grid"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="pref_font_size"
+            app:title="@string/pref_font_size_title"
+            app:entries="@array/font_size_entries"
+            app:entryValues="@array/font_size_values"
+            app:defaultValue="medium"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <!-- ── Editor ─────────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_cat_editor">
+
+        <SwitchPreferenceCompat
+            app:key="pref_autosave"
+            app:title="@string/pref_autosave_title"
+            app:summary="@string/pref_autosave_summary"
+            app:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            app:key="pref_default_preview"
+            app:title="@string/pref_default_preview_title"
+            app:summary="@string/pref_default_preview_summary"
+            app:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- ── Security ──────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_cat_security">
+
+        <SwitchPreferenceCompat
+            app:key="pref_lock"
+            app:title="@string/pref_lock_title"
+            app:summary="@string/pref_lock_summary"
+            app:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- ── Backup ─────────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_cat_backup">
+
+        <Preference
+            app:key="pref_export"
+            app:title="@string/pref_export_title"
+            app:summary="@string/pref_export_summary" />
+
+        <Preference
+            app:key="pref_import"
+            app:title="@string/pref_import_title"
+            app:summary="@string/pref_import_summary" />
+
+    </PreferenceCategory>
+
+    <!-- ── About ──────────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_cat_about">
+
+        <Preference
+            app:key="pref_version"
+            app:title="@string/pref_version_title"
+            app:summary="@string/pref_version_summary" />
+
+        <Preference
+            app:key="pref_github"
+            app:title="@string/pref_github_title"
+            app:summary="github.com/deepanjanxyz/notepad" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
