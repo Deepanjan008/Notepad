@@ -6,3 +6,8 @@ local.properties
 *.iml
 .DS_Store
 *.jks
+
+# Keystore & Signing files
+*.jks
+*.keystore
+my-release-key.jks
